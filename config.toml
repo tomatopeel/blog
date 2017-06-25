@@ -1,3 +1,70 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "tomatopeel.com"
+title = "tomatopeel"
+
+theme = "minimo"
+
+disqusShortname = ""
+googleAnalytics = ""
+Paginate = 5
+SectionPagesMenu = "main"
+PygmentsCodeFences = true
+
+[params]
+  description = "tomatopeel's blog"
+  dateFormat = "2006, Jan 2"
+  copyrightOwner = "Thomas O'Neill"
+  copyrightStartYear = "2017"
+  favicon = "favicon.ico"
+  hideEntryNavigation = false
+  customCSS = "css/custom.css"
+
+[params.opengraph]
+  [params.opengraph.facebook]
+    admins = ""
+    appid = ""
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[social]
+  facebook = ""
+
+[author]
+  name = "tomatopeel"
+
+#[author.social]
+#  codepen = "MunifTanjim"
+#  facebook = "MunifTanjim"
+#  github = "MunifTanjim/minimo"
+#  instagram = "instagram"
+#  twitter = "MunifTanjim"
+
+[permalinks]
+  page = "/:slug/"
+  
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  weight = 10
+  url = "https://github.com/tomatopeel"
+[[menu.main]]
+  identifier = "code"
+  name = "code"
+  weight = 100
+  url = "https://github.com/tomatopeel"
+[[menu.main]]
+  identifier = "post"
+  name       = "posts"
+  url        = "/post/"
+  weight     = 50
+  
+# Language Configuration
+defaultContentLanguage = "en"
+
+[languages]
+  # edit this block for your own language
+  [languages.en]
+    lang = "en"
+    languageName = "English"
+    weight = 1
